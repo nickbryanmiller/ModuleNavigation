@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2700EA6D221FE09D006C4ED4 /* NMIntentGoToAnimalPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2700EA6C221FE09D006C4ED4 /* NMIntentGoToAnimalPage.swift */; };
 		272F31ED221FCA5C000E1B17 /* IntentModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 272F31EB221FCA5C000E1B17 /* IntentModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		272F31FA221FCC3D000E1B17 /* NMIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F31F9221FCC3D000E1B17 /* NMIntent.swift */; };
 		272F321F221FCEB6000E1B17 /* NMIntentHandlerSystemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F321E221FCEB6000E1B17 /* NMIntentHandlerSystemProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2700EA6C221FE09D006C4ED4 /* NMIntentGoToAnimalPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMIntentGoToAnimalPage.swift; sourceTree = "<group>"; };
 		272F31E8221FCA5C000E1B17 /* IntentModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IntentModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		272F31EB221FCA5C000E1B17 /* IntentModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentModule.h; sourceTree = "<group>"; };
 		272F31EC221FCA5C000E1B17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 				272F31EC221FCA5C000E1B17 /* Info.plist */,
 				272F31F9221FCC3D000E1B17 /* NMIntent.swift */,
 				272F321E221FCEB6000E1B17 /* NMIntentHandlerSystemProtocol.swift */,
+				2700EA6C221FE09D006C4ED4 /* NMIntentGoToAnimalPage.swift */,
 			);
 			path = IntentModule;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				272F31FA221FCC3D000E1B17 /* NMIntent.swift in Sources */,
+				2700EA6D221FE09D006C4ED4 /* NMIntentGoToAnimalPage.swift in Sources */,
 				272F321F221FCEB6000E1B17 /* NMIntentHandlerSystemProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

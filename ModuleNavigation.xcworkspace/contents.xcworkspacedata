@@ -16,4 +16,7 @@
    <FileRef
       location = "group:IntentHandlerModule/IntentHandlerModule.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:AnimalModule/AnimalModule.xcodeproj">
+   </FileRef>
 </Workspace>

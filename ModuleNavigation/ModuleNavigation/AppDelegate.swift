@@ -35,8 +35,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		let controllers = [rootVC1, rootVC2]
 		tabController.viewControllers = controllers.map { UINavigationController(rootViewController: $0) }
 		
-		let rootNavController = UINavigationController(rootViewController: tabController)
-		window.rootViewController = rootNavController
+//		let rootNavController = UINavigationController(rootViewController: tabController)
+//		window.rootViewController = rootNavController
+		window.rootViewController = tabController
 		window.makeKeyAndVisible()
 		self.window = window
 		

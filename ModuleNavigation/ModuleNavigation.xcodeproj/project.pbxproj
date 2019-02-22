@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2700EA68221FE029006C4ED4 /* AnimalModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2700EA67221FE029006C4ED4 /* AnimalModule.framework */; };
+		2700EA69221FE029006C4ED4 /* AnimalModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2700EA67221FE029006C4ED4 /* AnimalModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		272F31AE221FBEBA000E1B17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F31AD221FBEBA000E1B17 /* AppDelegate.swift */; };
 		272F31B5221FBEBC000E1B17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 272F31B4221FBEBC000E1B17 /* Assets.xcassets */; };
-		272F31D7221FC2BA000E1B17 /* ProfileModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272F31D6221FC2BA000E1B17 /* ProfileModule.framework */; };
-		272F31D8221FC2BA000E1B17 /* ProfileModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 272F31D6221FC2BA000E1B17 /* ProfileModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		272F31DB221FC761000E1B17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272F31DA221FC761000E1B17 /* LaunchScreen.storyboard */; };
-		272F3217221FCD09000E1B17 /* IntentModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272F3216221FCD09000E1B17 /* IntentModule.framework */; };
-		272F3218221FCD09000E1B17 /* IntentModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 272F3216221FCD09000E1B17 /* IntentModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		272F321A221FCD46000E1B17 /* ExploreModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272F3219221FCD46000E1B17 /* ExploreModule.framework */; };
-		272F321B221FCD46000E1B17 /* ExploreModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 272F3219221FCD46000E1B17 /* ExploreModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2731F07D221FD65500E15AA3 /* IntentHandlerModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2731F07C221FD65500E15AA3 /* IntentHandlerModule.framework */; };
-		2731F07E221FD65500E15AA3 /* IntentHandlerModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2731F07C221FD65500E15AA3 /* IntentHandlerModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2731F0A0221FDE6900E15AA3 /* ProfileModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2731F09F221FDE6900E15AA3 /* ProfileModule.framework */; };
+		2731F0A1221FDE6900E15AA3 /* ProfileModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2731F09F221FDE6900E15AA3 /* ProfileModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2731F0A3221FDE6900E15AA3 /* IntentModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2731F0A2221FDE6900E15AA3 /* IntentModule.framework */; };
+		2731F0A4221FDE6900E15AA3 /* IntentModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2731F0A2221FDE6900E15AA3 /* IntentModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2731F0A6221FDE6A00E15AA3 /* ExploreModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2731F0A5221FDE6A00E15AA3 /* ExploreModule.framework */; };
+		2731F0A7221FDE6A00E15AA3 /* ExploreModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2731F0A5221FDE6A00E15AA3 /* ExploreModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2731F0A9221FDE6A00E15AA3 /* IntentHandlerModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2731F0A8221FDE6A00E15AA3 /* IntentHandlerModule.framework */; };
+		2731F0AA221FDE6A00E15AA3 /* IntentHandlerModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2731F0A8221FDE6A00E15AA3 /* IntentHandlerModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,10 +29,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				272F3218221FCD09000E1B17 /* IntentModule.framework in Embed Frameworks */,
-				272F31D8221FC2BA000E1B17 /* ProfileModule.framework in Embed Frameworks */,
-				272F321B221FCD46000E1B17 /* ExploreModule.framework in Embed Frameworks */,
-				2731F07E221FD65500E15AA3 /* IntentHandlerModule.framework in Embed Frameworks */,
+				2731F0A4221FDE6900E15AA3 /* IntentModule.framework in Embed Frameworks */,
+				2731F0A1221FDE6900E15AA3 /* ProfileModule.framework in Embed Frameworks */,
+				2700EA69221FE029006C4ED4 /* AnimalModule.framework in Embed Frameworks */,
+				2731F0A7221FDE6A00E15AA3 /* ExploreModule.framework in Embed Frameworks */,
+				2731F0AA221FDE6A00E15AA3 /* IntentHandlerModule.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,15 +41,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2700EA67221FE029006C4ED4 /* AnimalModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AnimalModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		272F31AA221FBEBA000E1B17 /* ModuleNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModuleNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		272F31AD221FBEBA000E1B17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		272F31B4221FBEBC000E1B17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		272F31B9221FBEBC000E1B17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		272F31D6221FC2BA000E1B17 /* ProfileModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ProfileModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		272F31DA221FC761000E1B17 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		272F3216221FCD09000E1B17 /* IntentModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IntentModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		272F3219221FCD46000E1B17 /* ExploreModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ExploreModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2731F07C221FD65500E15AA3 /* IntentHandlerModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IntentHandlerModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2731F09F221FDE6900E15AA3 /* ProfileModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ProfileModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2731F0A2221FDE6900E15AA3 /* IntentModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IntentModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2731F0A5221FDE6A00E15AA3 /* ExploreModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ExploreModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2731F0A8221FDE6A00E15AA3 /* IntentHandlerModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IntentHandlerModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +58,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				272F3217221FCD09000E1B17 /* IntentModule.framework in Frameworks */,
-				272F31D7221FC2BA000E1B17 /* ProfileModule.framework in Frameworks */,
-				272F321A221FCD46000E1B17 /* ExploreModule.framework in Frameworks */,
-				2731F07D221FD65500E15AA3 /* IntentHandlerModule.framework in Frameworks */,
+				2731F0A3221FDE6900E15AA3 /* IntentModule.framework in Frameworks */,
+				2731F0A0221FDE6900E15AA3 /* ProfileModule.framework in Frameworks */,
+				2700EA68221FE029006C4ED4 /* AnimalModule.framework in Frameworks */,
+				2731F0A6221FDE6A00E15AA3 /* ExploreModule.framework in Frameworks */,
+				2731F0A9221FDE6A00E15AA3 /* IntentHandlerModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,10 +72,11 @@
 		272F31A1221FBEBA000E1B17 = {
 			isa = PBXGroup;
 			children = (
-				2731F07C221FD65500E15AA3 /* IntentHandlerModule.framework */,
-				272F3219221FCD46000E1B17 /* ExploreModule.framework */,
-				272F3216221FCD09000E1B17 /* IntentModule.framework */,
-				272F31D6221FC2BA000E1B17 /* ProfileModule.framework */,
+				2700EA67221FE029006C4ED4 /* AnimalModule.framework */,
+				2731F0A8221FDE6A00E15AA3 /* IntentHandlerModule.framework */,
+				2731F0A5221FDE6A00E15AA3 /* ExploreModule.framework */,
+				2731F0A2221FDE6900E15AA3 /* IntentModule.framework */,
+				2731F09F221FDE6900E15AA3 /* ProfileModule.framework */,
 				272F31AC221FBEBA000E1B17 /* ModuleNavigation */,
 				272F31AB221FBEBA000E1B17 /* Products */,
 			);

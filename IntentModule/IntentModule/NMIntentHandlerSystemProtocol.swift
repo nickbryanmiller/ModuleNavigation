@@ -6,6 +6,8 @@
 //  Copyright © 2019 nickbryanmiller. All rights reserved.
 //
 
+import Foundation
+
 public protocol NMIntentHandlerSystemProtocol {
-	func handle(intent: NMIntent)
+	func handle(_ intent: NMIntent)
 }
