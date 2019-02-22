@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		
 		let window = UIWindow(frame: UIScreen.main.bounds)
 		
-//		let intentHandler = NMIntentHandlerSystem()
+		let intentHandler = NMIntentHandlerSystem()
 		
 		let rootVC1 = ExploreViewController()
 		rootVC1.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)

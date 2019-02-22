@@ -10,6 +10,9 @@ import Foundation
 import IntentModule
 
 public class NMIntentHandlerSystem: NMIntentHandlerSystemProtocol {
+	
+	public init() {}
+	
 	private var intentHandlers: [NMIntentHandler] = [
 	]
 	
