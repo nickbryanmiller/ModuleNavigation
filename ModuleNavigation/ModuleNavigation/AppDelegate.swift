@@ -7,18 +7,33 @@
 //
 
 import UIKit
+import ExploreModule
+import ProfileModule
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
 
-	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+	func application(
+		_ application: UIApplication,
+		didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool
+	{
 		
 		let window = UIWindow(frame: UIScreen.main.bounds)
-		let vc = RootViewController()
-		let navController = UINavigationController(rootViewController: vc)
-		window.rootViewController = navController
+		
+		let rootVC1 = ExploreViewController()
+		rootVC1.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+		
+		let rootVC2 = ProfileViewController()
+		rootVC2.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 1)
+		
+		let tabController = UITabBarController(nibName: nil, bundle: nil)
+		let controllers = [rootVC1, rootVC2]
+		tabController.viewControllers = controllers.map { UINavigationController(rootViewController: $0) }
+		
+		let rootNavController = UINavigationController(rootViewController: tabController)
+		window.rootViewController = rootNavController
 		window.makeKeyAndVisible()
 		self.window = window
 		
