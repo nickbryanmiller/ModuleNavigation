@@ -24,5 +24,4 @@ public class ProfileViewController: UIViewController {
 		view.backgroundColor = .blue
 	}
 	
-	
 }

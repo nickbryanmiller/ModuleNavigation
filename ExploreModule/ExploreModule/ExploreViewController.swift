@@ -24,6 +24,5 @@ public class ExploreViewController: UIViewController {
 		view.backgroundColor = .red
 	}
 
-
 }
 

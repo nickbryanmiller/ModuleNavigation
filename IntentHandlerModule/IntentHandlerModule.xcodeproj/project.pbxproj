@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		272F31ED221FCA5C000E1B17 /* IntentModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 272F31EB221FCA5C000E1B17 /* IntentModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		272F31FA221FCC3D000E1B17 /* NMIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F31F9221FCC3D000E1B17 /* NMIntent.swift */; };
-		272F321F221FCEB6000E1B17 /* NMIntentHandlerSystemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F321E221FCEB6000E1B17 /* NMIntentHandlerSystemProtocol.swift */; };
+		272F322F221FCFF4000E1B17 /* IntentHandlerModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 272F322D221FCFF4000E1B17 /* IntentHandlerModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		272F3236221FD041000E1B17 /* NMIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F3235221FD041000E1B17 /* NMIntentHandler.swift */; };
+		272F3238221FD078000E1B17 /* NMIntentHandlerSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F3237221FD078000E1B17 /* NMIntentHandlerSystem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		272F31E8221FCA5C000E1B17 /* IntentModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IntentModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		272F31EB221FCA5C000E1B17 /* IntentModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentModule.h; sourceTree = "<group>"; };
-		272F31EC221FCA5C000E1B17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		272F31F9221FCC3D000E1B17 /* NMIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMIntent.swift; sourceTree = "<group>"; };
-		272F321E221FCEB6000E1B17 /* NMIntentHandlerSystemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMIntentHandlerSystemProtocol.swift; sourceTree = "<group>"; };
+		272F322A221FCFF4000E1B17 /* IntentHandlerModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IntentHandlerModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		272F322D221FCFF4000E1B17 /* IntentHandlerModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentHandlerModule.h; sourceTree = "<group>"; };
+		272F322E221FCFF4000E1B17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		272F3235221FD041000E1B17 /* NMIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMIntentHandler.swift; sourceTree = "<group>"; };
+		272F3237221FD078000E1B17 /* NMIntentHandlerSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMIntentHandlerSystem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		272F31E5221FCA5C000E1B17 /* Frameworks */ = {
+		272F3227221FCFF4000E1B17 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -31,99 +31,99 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		272F31DE221FCA5C000E1B17 = {
+		272F3220221FCFF4000E1B17 = {
 			isa = PBXGroup;
 			children = (
-				272F31EA221FCA5C000E1B17 /* IntentModule */,
-				272F31E9221FCA5C000E1B17 /* Products */,
+				272F322C221FCFF4000E1B17 /* IntentHandlerModule */,
+				272F322B221FCFF4000E1B17 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		272F31E9221FCA5C000E1B17 /* Products */ = {
+		272F322B221FCFF4000E1B17 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				272F31E8221FCA5C000E1B17 /* IntentModule.framework */,
+				272F322A221FCFF4000E1B17 /* IntentHandlerModule.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		272F31EA221FCA5C000E1B17 /* IntentModule */ = {
+		272F322C221FCFF4000E1B17 /* IntentHandlerModule */ = {
 			isa = PBXGroup;
 			children = (
-				272F31EB221FCA5C000E1B17 /* IntentModule.h */,
-				272F31EC221FCA5C000E1B17 /* Info.plist */,
-				272F31F9221FCC3D000E1B17 /* NMIntent.swift */,
-				272F321E221FCEB6000E1B17 /* NMIntentHandlerSystemProtocol.swift */,
+				272F322D221FCFF4000E1B17 /* IntentHandlerModule.h */,
+				272F322E221FCFF4000E1B17 /* Info.plist */,
+				272F3235221FD041000E1B17 /* NMIntentHandler.swift */,
+				272F3237221FD078000E1B17 /* NMIntentHandlerSystem.swift */,
 			);
-			path = IntentModule;
+			path = IntentHandlerModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		272F31E3221FCA5C000E1B17 /* Headers */ = {
+		272F3225221FCFF4000E1B17 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				272F31ED221FCA5C000E1B17 /* IntentModule.h in Headers */,
+				272F322F221FCFF4000E1B17 /* IntentHandlerModule.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		272F31E7221FCA5C000E1B17 /* IntentModule */ = {
+		272F3229221FCFF4000E1B17 /* IntentHandlerModule */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 272F31F0221FCA5C000E1B17 /* Build configuration list for PBXNativeTarget "IntentModule" */;
+			buildConfigurationList = 272F3232221FCFF4000E1B17 /* Build configuration list for PBXNativeTarget "IntentHandlerModule" */;
 			buildPhases = (
-				272F31E3221FCA5C000E1B17 /* Headers */,
-				272F31E4221FCA5C000E1B17 /* Sources */,
-				272F31E5221FCA5C000E1B17 /* Frameworks */,
-				272F31E6221FCA5C000E1B17 /* Resources */,
+				272F3225221FCFF4000E1B17 /* Headers */,
+				272F3226221FCFF4000E1B17 /* Sources */,
+				272F3227221FCFF4000E1B17 /* Frameworks */,
+				272F3228221FCFF4000E1B17 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = IntentModule;
-			productName = IntentModule;
-			productReference = 272F31E8221FCA5C000E1B17 /* IntentModule.framework */;
+			name = IntentHandlerModule;
+			productName = IntentHandlerModule;
+			productReference = 272F322A221FCFF4000E1B17 /* IntentHandlerModule.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		272F31DF221FCA5C000E1B17 /* Project object */ = {
+		272F3221221FCFF4000E1B17 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = nickbryanmiller;
 				TargetAttributes = {
-					272F31E7221FCA5C000E1B17 = {
+					272F3229221FCFF4000E1B17 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
 					};
 				};
 			};
-			buildConfigurationList = 272F31E2221FCA5C000E1B17 /* Build configuration list for PBXProject "IntentModule" */;
+			buildConfigurationList = 272F3224221FCFF4000E1B17 /* Build configuration list for PBXProject "IntentHandlerModule" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 272F31DE221FCA5C000E1B17;
-			productRefGroup = 272F31E9221FCA5C000E1B17 /* Products */;
+			mainGroup = 272F3220221FCFF4000E1B17;
+			productRefGroup = 272F322B221FCFF4000E1B17 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				272F31E7221FCA5C000E1B17 /* IntentModule */,
+				272F3229221FCFF4000E1B17 /* IntentHandlerModule */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		272F31E6221FCA5C000E1B17 /* Resources */ = {
+		272F3228221FCFF4000E1B17 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -133,19 +133,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		272F31E4221FCA5C000E1B17 /* Sources */ = {
+		272F3226221FCFF4000E1B17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				272F31FA221FCC3D000E1B17 /* NMIntent.swift in Sources */,
-				272F321F221FCEB6000E1B17 /* NMIntentHandlerSystemProtocol.swift in Sources */,
+				272F3238221FD078000E1B17 /* NMIntentHandlerSystem.swift in Sources */,
+				272F3236221FD041000E1B17 /* NMIntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		272F31EE221FCA5C000E1B17 /* Debug */ = {
+		272F3230221FCFF4000E1B17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -209,7 +209,7 @@
 			};
 			name = Debug;
 		};
-		272F31EF221FCA5C000E1B17 /* Release */ = {
+		272F3231221FCFF4000E1B17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -267,7 +267,7 @@
 			};
 			name = Release;
 		};
-		272F31F1221FCA5C000E1B17 /* Debug */ = {
+		272F3233221FCFF4000E1B17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -278,14 +278,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = IntentModule/Info.plist;
+				INFOPLIST_FILE = IntentHandlerModule/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = nickbryanmiller.IntentModule;
+				PRODUCT_BUNDLE_IDENTIFIER = nickbryanmiller.IntentHandlerModule;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -294,7 +294,7 @@
 			};
 			name = Debug;
 		};
-		272F31F2221FCA5C000E1B17 /* Release */ = {
+		272F3234221FCFF4000E1B17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -305,14 +305,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = IntentModule/Info.plist;
+				INFOPLIST_FILE = IntentHandlerModule/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = nickbryanmiller.IntentModule;
+				PRODUCT_BUNDLE_IDENTIFIER = nickbryanmiller.IntentHandlerModule;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -323,25 +323,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		272F31E2221FCA5C000E1B17 /* Build configuration list for PBXProject "IntentModule" */ = {
+		272F3224221FCFF4000E1B17 /* Build configuration list for PBXProject "IntentHandlerModule" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				272F31EE221FCA5C000E1B17 /* Debug */,
-				272F31EF221FCA5C000E1B17 /* Release */,
+				272F3230221FCFF4000E1B17 /* Debug */,
+				272F3231221FCFF4000E1B17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		272F31F0221FCA5C000E1B17 /* Build configuration list for PBXNativeTarget "IntentModule" */ = {
+		272F3232221FCFF4000E1B17 /* Build configuration list for PBXNativeTarget "IntentHandlerModule" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				272F31F1221FCA5C000E1B17 /* Debug */,
-				272F31F2221FCA5C000E1B17 /* Release */,
+				272F3233221FCFF4000E1B17 /* Debug */,
+				272F3234221FCFF4000E1B17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 272F31DF221FCA5C000E1B17 /* Project object */;
+	rootObject = 272F3221221FCFF4000E1B17 /* Project object */;
 }

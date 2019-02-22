@@ -13,4 +13,7 @@
    <FileRef
       location = "group:ExploreModule/ExploreModule.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:IntentHandlerModule/IntentHandlerModule.xcodeproj">
+   </FileRef>
 </Workspace>
