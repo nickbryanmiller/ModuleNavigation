@@ -6,6 +6,7 @@
 //  Copyright © 2019 nickbryanmiller. All rights reserved.
 //
 
+import Foundation
 import IntentModule
 
 public protocol NMIntentHandler {

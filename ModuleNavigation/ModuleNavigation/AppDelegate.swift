@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//import IntentHandlerModule
+import IntentHandlerModule
 import ExploreModule
 import ProfileModule
 

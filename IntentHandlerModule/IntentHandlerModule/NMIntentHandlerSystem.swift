@@ -6,12 +6,10 @@
 //  Copyright © 2019 nickbryanmiller. All rights reserved.
 //
 
+import Foundation
 import IntentModule
 
 public class NMIntentHandlerSystem: NMIntentHandlerSystemProtocol {
-	
-	public init() {}
-	
 	private var intentHandlers: [NMIntentHandler] = [
 	]
 	
