@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import IntentModule
 
 public class ProfileViewController: UIViewController {
 	
-	public init() {
+	public init(intentHandler: NMIntentHandlerSystemProtocol) {
 		super.init(nibName: nil, bundle: nil)
 		title = "Profile"
 	}

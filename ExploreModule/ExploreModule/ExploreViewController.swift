@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import IntentModule
 
 public class ExploreViewController: UIViewController {
 	
-	public init() {
+	public init(intentHandler: NMIntentHandlerSystemProtocol) {
 		super.init(nibName: nil, bundle: nil)
 		title = "Explore"
 	}

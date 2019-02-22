@@ -25,10 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		
 		let intentHandler = NMIntentHandlerSystem()
 		
-		let rootVC1 = ExploreViewController()
+		let rootVC1 = ExploreViewController(intentHandler: intentHandler)
 		rootVC1.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
 		
-		let rootVC2 = ProfileViewController()
+		let rootVC2 = ProfileViewController(intentHandler: intentHandler)
 		rootVC2.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 1)
 		
 		let tabController = UITabBarController(nibName: nil, bundle: nil)
