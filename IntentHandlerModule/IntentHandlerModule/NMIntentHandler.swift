@@ -9,6 +9,7 @@
 import Foundation
 import IntentModule
 
-internal protocol NMIntentHandler: NMIntentHandlerSystemProtocol {
-	func canHandle(_ intent: NMIntent) -> Bool
+internal protocol NMIntentHandler {
+	static func canHandle(_ intent: NMIntent) -> Bool
+	static func handle(_ intent: NMIntent)
 }

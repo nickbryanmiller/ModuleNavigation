@@ -13,24 +13,21 @@ public class NMIntentHandlerSystem: NMIntentHandlerSystemProtocol {
 	
 	public init() {}
 	
-	// I like the idea od making this static method references or something that isnt
-	// instantiating them all because they do not need to be instatiated
-	private var intentHandlers: [NMIntentHandler] = [
-		NMIntentHandlerGoToAnimalPage()
-	]
-	
 	public func handle(_ intent: NMIntent) {
-		guard let handler = capableHandler(intent) else {
+		guard let handleMethod = capableHandlerMethod(intent) else {
 			print("no capable handler")
 			return
 		}
-		handler.handle(intent)
+		handleMethod(intent)
 	}
 	
-	private func capableHandler(_ intent: NMIntent) -> NMIntentHandler? {
-		for handler in intentHandlers {
-			if handler.canHandle(intent) { return handler }
-		}
+	private func capableHandlerMethod(_ intent: NMIntent) -> ((NMIntent) -> Void)? {
+		if let handle = capableHandlerMethodInAnimalModule(intent) { return handle }
+		return nil
+	}
+	
+	private func capableHandlerMethodInAnimalModule(_ intent: NMIntent) -> ((NMIntent) -> Void)? {
+		if NMIntentHandlerGoToAnimalPage.canHandle(intent) { return NMIntentHandlerGoToAnimalPage.handle }
 		return nil
 	}
 }
