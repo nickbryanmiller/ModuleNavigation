@@ -1,9 +1,13 @@
 # ModuleNavigation
-
 Basic iOS navigation using an IntentHandler system.
 
-# Intent Handler
+# How Do I Add A New Route?
+- Create a new Intent in IntentModule. (look at NMIntentGoToAnimalPage for guidance)
+- Create a new IntentHandler in IntentHandlerModule. (look at NMIntentHandlerGoToAnimalPage)
+- Open NMIntentHandlerSystem in IntentHandlerModule and add your checks there (just like with NMIntentHandlerGoToAnimalPage)
+#### You are done! Now you can use it 😃 (example in didTapButton() in ExploreViewController)
 
+# Intent Handler Checkmarks
 - [x] No Buck Dependency Cycles
 - [x] Easy for a developer to use and learn
 - [x] Works with multiple apps sharing dependencies (each has their own IntentHandlerSystem but IntentHandlerBasics is another module with the base protocol).
