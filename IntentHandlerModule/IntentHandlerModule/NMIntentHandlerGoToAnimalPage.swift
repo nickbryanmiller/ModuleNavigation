@@ -12,11 +12,11 @@ import AnimalModule // I can do this because this class sits above and can depen
 
 internal class NMIntentHandlerGoToAnimalPage: NMIntentHandler {
 	
-	static func canHandle(_ intent: NMIntent) -> Bool {
+	func canHandle(_ intent: NMIntent) -> Bool {
 		return intent is NMIntentGoToAnimalPage
 	}
 
-	static func handle(_ intent: NMIntent) {
+	func handle(_ intent: NMIntent) {
 		guard let intent = intent as? NMIntentGoToAnimalPage else { return }
 		
 		// would definitely make a way to not have to create a new system intent handler

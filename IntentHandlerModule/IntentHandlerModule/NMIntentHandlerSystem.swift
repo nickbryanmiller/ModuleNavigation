@@ -11,23 +11,29 @@ import IntentModule
 
 public class NMIntentHandlerSystem: NMIntentHandlerSystemProtocol {
 	
-	public init() {}
+	private var intentHandlers = [NMIntentHandler]()
+	
+	public init() {
+		registerAllIntentHandlers()
+	}
 	
 	public func handle(_ intent: NMIntent) {
-		guard let handleMethod = capableHandlerMethod(intent) else {
-			print("no capable handler")
-			return
+		guard let handler = capableHandlerMethod(intent) else { fatalError("no capable handler") }
+		handler.handle(intent)
+	}
+	
+	private func registerAllIntentHandlers() {
+		register(NMIntentHandlerGoToAnimalPage())
+	}
+	
+	private func register(_ intentHandler: NMIntentHandler) {
+		intentHandlers.append(intentHandler)
+	}
+	
+	private func capableHandlerMethod(_ intent: NMIntent) -> NMIntentHandler? {
+		for handler in intentHandlers {
+			if handler.canHandle(intent) { return handler }
 		}
-		handleMethod(intent)
-	}
-	
-	private func capableHandlerMethod(_ intent: NMIntent) -> ((NMIntent) -> Void)? {
-		if let handle = capableHandlerMethodInAnimalModule(intent) { return handle }
-		return nil
-	}
-	
-	private func capableHandlerMethodInAnimalModule(_ intent: NMIntent) -> ((NMIntent) -> Void)? {
-		if NMIntentHandlerGoToAnimalPage.canHandle(intent) { return NMIntentHandlerGoToAnimalPage.handle }
 		return nil
 	}
 }
