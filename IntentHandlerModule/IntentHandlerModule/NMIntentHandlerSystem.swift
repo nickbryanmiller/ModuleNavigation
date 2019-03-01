@@ -19,6 +19,9 @@ public class NMIntentHandlerSystem: NMIntentHandlerSystemProtocol {
 	
 	// MARK: - Public
 	
+	public var tabForViewController: ((UIViewController) -> Int)? = nil
+	public var shouldSwitchTabs: ((((UIViewController) -> Int), ((UIViewController) -> Int)) -> Bool)? = nil
+	
 	public func handle(
 		_ intent: NMIntent,
 		presentingViewController: UIViewController?)
@@ -31,6 +34,13 @@ public class NMIntentHandlerSystem: NMIntentHandlerSystemProtocol {
 			intent,
 			intentHandler: self,
 			presentingViewController: presentingViewController)
+	}
+	
+	public func naviationHelper(
+		from viewController: UIViewController,
+		to viewController: UIViewController) -> 
+	{
+		
 	}
 	
 	// MARK: - Private
