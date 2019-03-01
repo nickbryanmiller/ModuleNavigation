@@ -17,9 +17,15 @@ public class NMIntentHandlerSystem: NMIntentHandlerSystemProtocol {
 		registerAllIntentHandlers()
 	}
 	
-	public func handle(_ intent: NMIntent) {
+	public func handle(
+		_ intent: NMIntent,
+		presentingViewController: UIViewController?)
+	{
 		guard let handler = capableHandlerMethod(intent) else { fatalError("no capable handler") }
-		handler.handle(intent)
+		handler.handle(
+			intent,
+			intentHandler: self,
+			presentingViewController: presentingViewController)
 	}
 	
 	private func registerAllIntentHandlers() {

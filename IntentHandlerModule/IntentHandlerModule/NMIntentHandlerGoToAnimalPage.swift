@@ -15,14 +15,17 @@ internal class NMIntentHandlerGoToAnimalPage: NMIntentHandler {
 	func canHandle(_ intent: NMIntent) -> Bool {
 		return intent is NMIntentGoToAnimalPage
 	}
-
-	func handle(_ intent: NMIntent) {
-		guard let intent = intent as? NMIntentGoToAnimalPage else { return }
+	
+	func handle(
+		_ intent: NMIntent,
+		intentHandler: NMIntentHandlerSystemProtocol,
+		presentingViewController: UIViewController?)
+	{
+		guard intent is NMIntentGoToAnimalPage else { return }
 		
-		// would definitely make a way to not have to create a new system intent handler
-		let animalVC = AnimalViewController(intentHandler: NMIntentHandlerSystem())
+		let animalVC = AnimalViewController(intentHandler: intentHandler)
 		// do any other additional set up with the objects in the intent and the new vc
-		intent.caller.navigationController?.pushViewController(animalVC, animated: true)
+		presentingViewController?.navigationController?.pushViewController(animalVC, animated: true)
 	}
 	
 }

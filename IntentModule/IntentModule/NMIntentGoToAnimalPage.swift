@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  NMIntentGoToAnimalPage.swift
 //  IntentModule
 //
 //  Created by Nicholas Miller on 2/21/19.
@@ -13,11 +13,9 @@ import UIKit
 public class NMIntentGoToAnimalPage: NMIntent {
 	public let name: String
 	public let age: Int
-	public let caller: UIViewController
 	
-	public init(name: String, age: Int, caller: UIViewController) {
+	public init(name: String, age: Int) {
 		self.name = name
 		self.age = age
-		self.caller = caller
 	}
 }

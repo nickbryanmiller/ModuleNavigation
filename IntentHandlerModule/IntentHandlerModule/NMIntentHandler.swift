@@ -11,5 +11,8 @@ import IntentModule
 
 protocol NMIntentHandler {
 	func canHandle(_ intent: NMIntent) -> Bool
-	func handle(_ intent: NMIntent)
+	func handle(
+		_ intent: NMIntent,
+		intentHandler: NMIntentHandlerSystemProtocol,
+		presentingViewController: UIViewController?)
 }

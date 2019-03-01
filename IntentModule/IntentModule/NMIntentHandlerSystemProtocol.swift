@@ -9,5 +9,7 @@
 import Foundation
 
 public protocol NMIntentHandlerSystemProtocol {
-	func handle(_ intent: NMIntent)
+	func handle(
+		_ intent: NMIntent,
+		presentingViewController: UIViewController?)
 }

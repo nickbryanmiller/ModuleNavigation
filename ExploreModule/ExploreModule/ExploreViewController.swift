@@ -36,8 +36,8 @@ public class ExploreViewController: UIViewController {
 	}
 	
 	@objc private func didTapButton() {
-		let intent = NMIntentGoToAnimalPage(name: "Test", age: 12, caller: self)
-		intentHandler.handle(intent)
+		let intent = NMIntentGoToAnimalPage(name: "Test", age: 12)
+		intentHandler.handle(intent, presentingViewController: self)
 	}
 
 }
