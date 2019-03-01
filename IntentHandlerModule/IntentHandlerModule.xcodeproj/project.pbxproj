@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2700EA6F221FE283006C4ED4 /* NMIntentHandlerGoToAnimalPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2700EA6E221FE283006C4ED4 /* NMIntentHandlerGoToAnimalPage.swift */; };
+		27085B2F222917C300E3BE34 /* NMIntentHandlerGoToProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27085B2E222917C300E3BE34 /* NMIntentHandlerGoToProfilePage.swift */; };
 		2731F076221FD5FB00E15AA3 /* IntentHandlerModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 2731F074221FD5FB00E15AA3 /* IntentHandlerModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2731F080221FD6C100E15AA3 /* NMIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2731F07F221FD6C100E15AA3 /* NMIntentHandler.swift */; };
 		2731F082221FD70A00E15AA3 /* NMIntentHandlerSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2731F081221FD70A00E15AA3 /* NMIntentHandlerSystem.swift */; };
@@ -15,6 +16,7 @@
 
 /* Begin PBXFileReference section */
 		2700EA6E221FE283006C4ED4 /* NMIntentHandlerGoToAnimalPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMIntentHandlerGoToAnimalPage.swift; sourceTree = "<group>"; };
+		27085B2E222917C300E3BE34 /* NMIntentHandlerGoToProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMIntentHandlerGoToProfilePage.swift; sourceTree = "<group>"; };
 		2731F071221FD5FB00E15AA3 /* IntentHandlerModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IntentHandlerModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2731F074221FD5FB00E15AA3 /* IntentHandlerModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentHandlerModule.h; sourceTree = "<group>"; };
 		2731F075221FD5FB00E15AA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				2731F07F221FD6C100E15AA3 /* NMIntentHandler.swift */,
 				2731F081221FD70A00E15AA3 /* NMIntentHandlerSystem.swift */,
 				2700EA6E221FE283006C4ED4 /* NMIntentHandlerGoToAnimalPage.swift */,
+				27085B2E222917C300E3BE34 /* NMIntentHandlerGoToProfilePage.swift */,
 			);
 			path = IntentHandlerModule;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2731F082221FD70A00E15AA3 /* NMIntentHandlerSystem.swift in Sources */,
+				27085B2F222917C300E3BE34 /* NMIntentHandlerGoToProfilePage.swift in Sources */,
 				2731F080221FD6C100E15AA3 /* NMIntentHandler.swift in Sources */,
 				2700EA6F221FE283006C4ED4 /* NMIntentHandlerGoToAnimalPage.swift in Sources */,
 			);
