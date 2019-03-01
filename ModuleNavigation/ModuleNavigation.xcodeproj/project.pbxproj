@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27085B282228FC9900E3BE34 /* NavigationModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27085B272228FC7E00E3BE34 /* NavigationModule.framework */; };
+		27085B292228FC9900E3BE34 /* NavigationModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27085B272228FC7E00E3BE34 /* NavigationModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		272F31AE221FBEBA000E1B17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F31AD221FBEBA000E1B17 /* AppDelegate.swift */; };
 		272F31B5221FBEBC000E1B17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 272F31B4221FBEBC000E1B17 /* Assets.xcassets */; };
 		272F31DB221FC761000E1B17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272F31DA221FC761000E1B17 /* LaunchScreen.storyboard */; };
@@ -23,6 +25,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		27085B262228FC7E00E3BE34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27085B222228FC7E00E3BE34 /* NavigationModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 275977842228FB9500245341;
+			remoteInfo = NavigationModule;
+		};
+		27085B2A2228FC9900E3BE34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27085B222228FC7E00E3BE34 /* NavigationModule.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 275977832228FB9500245341;
+			remoteInfo = NavigationModule;
+		};
 		27A713702221F4B400C02DD1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 27A7136C2221F4B400C02DD1 /* ProfileModule.xcodeproj */;
@@ -104,6 +120,7 @@
 			files = (
 				27D354382221F5550078C436 /* AnimalModule.framework in Embed Frameworks */,
 				27D3543C2221F5550078C436 /* IntentHandlerModule.framework in Embed Frameworks */,
+				27085B292228FC9900E3BE34 /* NavigationModule.framework in Embed Frameworks */,
 				27D354482221F5550078C436 /* ProfileModule.framework in Embed Frameworks */,
 				27D354442221F5550078C436 /* IntentModule.framework in Embed Frameworks */,
 				27D354402221F5550078C436 /* ExploreModule.framework in Embed Frameworks */,
@@ -114,6 +131,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		27085B222228FC7E00E3BE34 /* NavigationModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NavigationModule.xcodeproj; path = ../NavigationModule/NavigationModule.xcodeproj; sourceTree = "<group>"; };
 		272F31AA221FBEBA000E1B17 /* ModuleNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModuleNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		272F31AD221FBEBA000E1B17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		272F31B4221FBEBC000E1B17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -133,6 +151,7 @@
 			files = (
 				27D354372221F5550078C436 /* AnimalModule.framework in Frameworks */,
 				27D3543B2221F5550078C436 /* IntentHandlerModule.framework in Frameworks */,
+				27085B282228FC9900E3BE34 /* NavigationModule.framework in Frameworks */,
 				27D354472221F5550078C436 /* ProfileModule.framework in Frameworks */,
 				27D354432221F5550078C436 /* IntentModule.framework in Frameworks */,
 				27D3543F2221F5550078C436 /* ExploreModule.framework in Frameworks */,
@@ -142,9 +161,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27085B232228FC7E00E3BE34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27085B272228FC7E00E3BE34 /* NavigationModule.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		272F31A1221FBEBA000E1B17 = {
 			isa = PBXGroup;
 			children = (
+				27085B222228FC7E00E3BE34 /* NavigationModule.xcodeproj */,
 				27D354312221F4F60078C436 /* AnimalModule.xcodeproj */,
 				27D3542B2221F4F20078C436 /* IntentHandlerModule.xcodeproj */,
 				27D354252221F4EF0078C436 /* ExploreModule.xcodeproj */,
@@ -234,6 +262,7 @@
 				27D354422221F5550078C436 /* PBXTargetDependency */,
 				27D354462221F5550078C436 /* PBXTargetDependency */,
 				27D3544A2221F5550078C436 /* PBXTargetDependency */,
+				27085B2B2228FC9900E3BE34 /* PBXTargetDependency */,
 			);
 			name = ModuleNavigation;
 			productName = ModuleNavigation;
@@ -284,6 +313,10 @@
 					ProjectRef = 27D3541E2221F4E10078C436 /* IntentModule.xcodeproj */;
 				},
 				{
+					ProductGroup = 27085B232228FC7E00E3BE34 /* Products */;
+					ProjectRef = 27085B222228FC7E00E3BE34 /* NavigationModule.xcodeproj */;
+				},
+				{
 					ProductGroup = 27A7136D2221F4B400C02DD1 /* Products */;
 					ProjectRef = 27A7136C2221F4B400C02DD1 /* ProfileModule.xcodeproj */;
 				},
@@ -296,6 +329,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		27085B272228FC7E00E3BE34 /* NavigationModule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NavigationModule.framework;
+			remoteRef = 27085B262228FC7E00E3BE34 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		27A713712221F4B400C02DD1 /* ProfileModule.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -357,6 +397,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		27085B2B2228FC9900E3BE34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NavigationModule;
+			targetProxy = 27085B2A2228FC9900E3BE34 /* PBXContainerItemProxy */;
+		};
 		27D3543A2221F5550078C436 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AnimalModule;

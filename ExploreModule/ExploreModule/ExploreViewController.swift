@@ -27,16 +27,28 @@ public class ExploreViewController: UIViewController {
 		super.viewDidLoad()
 		view.backgroundColor = .red
 		
-		let button = UIButton(frame: CGRect(x: 50, y: 100, width: 300, height: 100))
-		button.setTitle("to animal module", for: .normal)
-		button.setTitleColor(.white, for: .normal)
-		button.backgroundColor = .black
-		button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
-		view.addSubview(button)
+		let buttonAnimal = UIButton(frame: CGRect(x: 50, y: 100, width: 300, height: 100))
+		buttonAnimal.setTitle("to animal module", for: .normal)
+		buttonAnimal.setTitleColor(.white, for: .normal)
+		buttonAnimal.backgroundColor = .black
+		buttonAnimal.addTarget(self, action: #selector(didTapButtonAnimal), for: .touchUpInside)
+		view.addSubview(buttonAnimal)
+		
+		let buttonProfile = UIButton(frame: CGRect(x: 50, y: 300, width: 300, height: 100))
+		buttonProfile.setTitle("to profile module", for: .normal)
+		buttonProfile.setTitleColor(.white, for: .normal)
+		buttonProfile.backgroundColor = .black
+		buttonProfile.addTarget(self, action: #selector(didTapButtonProfile), for: .touchUpInside)
+		view.addSubview(buttonProfile)
 	}
 	
-	@objc private func didTapButton() {
+	@objc private func didTapButtonAnimal() {
 		let intent = NMIntentGoToAnimalPage(name: "Test", age: 12)
+		intentHandler.handle(intent, presentingViewController: self)
+	}
+	
+	@objc private func didTapButtonProfile() {
+		let intent = NMIntentGoToProfilePage(name: "Test", age: 12)
 		intentHandler.handle(intent, presentingViewController: self)
 	}
 
