@@ -11,22 +11,31 @@ import IntentModule
 
 public class NMIntentHandlerSystem: NMIntentHandlerSystemProtocol {
 	
-	private var intentHandlers = [NMIntentHandler]()
+	// MARK: - Lifecycle
 	
 	public init() {
 		registerAllIntentHandlers()
 	}
 	
+	// MARK: - Public
+	
 	public func handle(
 		_ intent: NMIntent,
 		presentingViewController: UIViewController?)
 	{
-		guard let handler = capableHandlerMethod(intent) else { fatalError("no capable handler") }
+		guard
+			let handler = intentHandlers.first(where: { $0.canHandle(intent) })
+			else { fatalError("no capable handler") }
+		
 		handler.handle(
 			intent,
 			intentHandler: self,
 			presentingViewController: presentingViewController)
 	}
+	
+	// MARK: - Private
+	
+	private var intentHandlers = [NMIntentHandler]()
 	
 	private func registerAllIntentHandlers() {
 		register(NMIntentHandlerGoToAnimalPage())
@@ -34,12 +43,5 @@ public class NMIntentHandlerSystem: NMIntentHandlerSystemProtocol {
 	
 	private func register(_ intentHandler: NMIntentHandler) {
 		intentHandlers.append(intentHandler)
-	}
-	
-	private func capableHandlerMethod(_ intent: NMIntent) -> NMIntentHandler? {
-		for handler in intentHandlers {
-			if handler.canHandle(intent) { return handler }
-		}
-		return nil
 	}
 }
