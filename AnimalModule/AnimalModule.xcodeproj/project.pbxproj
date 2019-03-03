@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2700EA61221FDFE1006C4ED4 /* AnimalModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 2700EA5F221FDFE1006C4ED4 /* AnimalModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2700EA6B221FE037006C4ED4 /* AnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2700EA6A221FE037006C4ED4 /* AnimalViewController.swift */; };
+		274845F8222B72E600DFE620 /* IntentModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274845F7222B72E600DFE620 /* IntentModule.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		2700EA5F221FDFE1006C4ED4 /* AnimalModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimalModule.h; sourceTree = "<group>"; };
 		2700EA60221FDFE1006C4ED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2700EA6A221FE037006C4ED4 /* AnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewController.swift; sourceTree = "<group>"; };
+		274845F7222B72E600DFE620 /* IntentModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IntentModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,6 +25,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274845F8222B72E600DFE620 /* IntentModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +37,7 @@
 			children = (
 				2700EA5E221FDFE1006C4ED4 /* AnimalModule */,
 				2700EA5D221FDFE1006C4ED4 /* Products */,
+				274845F6222B72E600DFE620 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +57,14 @@
 				2700EA6A221FE037006C4ED4 /* AnimalViewController.swift */,
 			);
 			path = AnimalModule;
+			sourceTree = "<group>";
+		};
+		274845F6222B72E600DFE620 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				274845F7222B72E600DFE620 /* IntentModule.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

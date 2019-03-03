@@ -16,6 +16,17 @@ import NavigationModule
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
+	
+	enum TabType: Int {
+		case explore = 0
+		case profile
+		
+		init?(from viewController: UIViewController) {
+			if viewController is ExploreViewController { self = .explore }
+			else if viewController is ProfileViewController { self = .profile }
+			else { return nil }
+		}
+	}
 
 	func application(
 		_ application: UIApplication,
@@ -26,22 +37,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		let tabBarController = UITabBarController(nibName: nil, bundle: nil)
 		
 		let intentHandler = NMIntentHandlerSystem(
-			navigationHelperForViewControllers: { [weak self] (oldVC, newVC) -> NavigationHelperProtocol in
+			navigationHelperForViewControllers: { (oldVC, newVC) -> NavigationHelperProtocol in
 				// check tab switch
-				if let newTab = self?.shouldSwitchTabs(oldVC: oldVC, newVC: newVC, tabBarController: tabBarController) {
-					return NavigationHelper(tabBarController: tabBarController, desiredIndex: newTab)
+				if
+					let desiredTab = TabType(from: newVC),
+					desiredTab.rawValue != tabBarController.selectedIndex
+				{
+					return NavigationHelper(
+						tabBarController: tabBarController,
+						desiredIndex: desiredTab.rawValue)
 				}
 				
+				// return push
 				guard let navVC = oldVC.navigationController else { fatalError() }
 				return NavigationHelper(navigationController: navVC, newViewController: newVC)
 				
 			})
 		
 		let rootVC1 = ExploreViewController(intentHandler: intentHandler)
-		rootVC1.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+		rootVC1.tabBarItem = UITabBarItem(
+			title: rootVC1.title,
+			image: nil,
+			tag: TabType.explore.rawValue)
 		
 		let rootVC2 = ProfileViewController(intentHandler: intentHandler)
-		rootVC2.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 1)
+		rootVC2.tabBarItem = UITabBarItem(
+			title: rootVC2.title,
+			image: nil,
+			tag: TabType.profile.rawValue)
 		
 		let controllers = [rootVC1, rootVC2]
 		tabBarController.viewControllers = controllers.map { UINavigationController(rootViewController: $0) }
@@ -51,34 +74,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		self.window = window
 		
 		return true
-	}
-	
-	func shouldSwitchTabs(
-		oldVC: UIViewController,
-		newVC: UIViewController,
-		tabBarController: UITabBarController) -> Int?
-	{
-		guard
-			let navController = tabBarController.selectedViewController as? UINavigationController,
-			let currentRootVC = navController.viewControllers.first,
-			let rootViewControllers = tabBarController.viewControllers
-			else { return nil }
-		
-		for (offset, rootVC) in rootViewControllers.enumerated() {
-			if
-				let rootNavVC = rootVC as? UINavigationController,
-				let rootVC = rootNavVC.viewControllers.first,
-				!areSiblings(rootVC, currentRootVC) && areSiblings(newVC, rootVC)
-			{
-				return offset
-			}
-		}
-		
-		return nil
-	}
-	
-	func areSiblings(_ class1: AnyObject, _ class2: AnyObject) -> Bool {
-		return object_getClassName(class1) == object_getClassName(class2)
 	}
 
 	func applicationWillResignActive(_ application: UIApplication) {
