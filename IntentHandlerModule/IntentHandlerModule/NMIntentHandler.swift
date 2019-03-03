@@ -10,14 +10,11 @@ import Foundation
 import IntentModule
 import NavigationModule
 
-public typealias GetNavigationHelperMethod
-	= ((_ oldViewController: UIViewController, _ newViewController: UIViewController) -> NavigationHelperProtocol)
-
 protocol NMIntentHandler {
 	func canHandle(_ intent: NMIntent) -> Bool
 	func handle(
 		_ intent: NMIntent,
-		intentHandler: NMIntentHandlerSystem,
+		intentHandler: NMIntentHandlerSystemProtocol,
 		navigationHelperBuilder: NavigationHelperBuilderProtocol,
 		presentingViewController: UIViewController)
 }

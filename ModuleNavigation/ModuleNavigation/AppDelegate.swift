@@ -24,8 +24,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		
 		let window = UIWindow(frame: UIScreen.main.bounds)
 		let tabBarController = UITabBarController(nibName: nil, bundle: nil)
+		let navigationHelperBuilder = NavigationHelperBuilder(tabBarController: tabBarController)
+		let intentHandler = NMIntentHandlerSystem(navigationHelperBuilder: navigationHelperBuilder)
+
+		let rootVC1 = ExploreViewController(intentHandler: intentHandler)
+		rootVC1.tabBarItem = UITabBarItem(
+			title: rootVC1.title,
+			image: nil,
+			tag: TabType.explore.rawValue)
 		
-		let intentHandler = NMIntentHandlerSyste
+		let rootVC2 = ProfileViewController(intentHandler: intentHandler)
+		rootVC2.tabBarItem = UITabBarItem(
+			title: rootVC2.title,
+			image: nil,
+			tag: TabType.profile.rawValue)
+		
+		let controllers = [rootVC1, rootVC2]
+		tabBarController.viewControllers = controllers.map { UINavigationController(rootViewController: $0) }
 		
 		window.rootViewController = tabBarController
 		window.makeKeyAndVisible()

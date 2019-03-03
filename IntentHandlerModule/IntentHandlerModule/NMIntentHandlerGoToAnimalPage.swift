@@ -19,19 +19,16 @@ internal class NMIntentHandlerGoToAnimalPage: NMIntentHandler {
 	
 	func handle(
 		_ intent: NMIntent,
-		intentHandler: NMIntentHandlerSystem,
+		intentHandler: NMIntentHandlerSystemProtocol,
 		navigationHelperBuilder: NavigationHelperBuilderProtocol,
 		presentingViewController: UIViewController)
 	{
-		guard
-			intent is NMIntentGoToAnimalPage,
-			let navigationController = presentingViewController.navigationController
-			else { return }
+		guard intent is NMIntentGoToAnimalPage else { return }
 		
 		let animalVC = AnimalViewController(intentHandler: intentHandler)
 		
 		let navigationHelper = navigationHelperBuilder.build(
-			presentingViewController: navigationController,
+			presentingViewController: presentingViewController,
 			destinationViewController: animalVC)
 		navigationHelper.navigate()
 	}

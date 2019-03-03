@@ -11,20 +11,20 @@ import NavigationModule
 
 final public class NavigationHelperBuilder: NavigationHelperBuilderProtocol {
 	
-	private weak var tabBarController: NMTabBarController? = nil
+	private weak var tabBarController: UITabBarController? = nil
 	
-	public init(tabBarController: NMTabBarController) {
+	public init(tabBarController: UITabBarController) {
 		self.tabBarController = tabBarController
 	}
 	
 	public func build(
-		presentingViewController: UINavigationController,
-		destinationViwController: UIViewController) -> NavigationHelperProtocol
+		presentingViewController: UIViewController,
+		destinationViewController: UIViewController) -> NavigationHelperProtocol
 	{
 		// check tab switch
 		if
 			let tabBarController = tabBarController,
-			let desiredTab = TabType(from: destinationViwController),
+			let desiredTab = TabType(from: destinationViewController),
 			desiredTab.rawValue != tabBarController.selectedIndex
 		{
 			return NavigationHelper(
@@ -33,8 +33,16 @@ final public class NavigationHelperBuilder: NavigationHelperBuilderProtocol {
 		}
 		
 		// return push
-		return NavigationHelper(
-			navigationController: presentingViewController,
-			newViewController: destinationViwController)
+		if let navController = presentingViewController as? UINavigationController {
+			return NavigationHelper(
+				navigationController: navController,
+				newViewController: destinationViewController)
+		} else if let navController = presentingViewController.navigationController {
+			return NavigationHelper(
+				navigationController: navController,
+				newViewController: destinationViewController)
+		} else {
+			fatalError("no navigation controller to perform push")
+		}
 	}
 }

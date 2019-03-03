@@ -11,7 +11,7 @@ import Foundation
 public protocol NavigationHelperBuilderProtocol {
 	
 	func build(
-		presentingViewController: UINavigationController,
+		presentingViewController: UIViewController,
 		destinationViewController: UIViewController) -> NavigationHelperProtocol
 	
 }

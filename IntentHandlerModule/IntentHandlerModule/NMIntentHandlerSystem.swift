@@ -33,7 +33,7 @@ public class NMIntentHandlerSystem: NMIntentHandlerSystemProtocol {
 		handler.handle(
 			intent,
 			intentHandler: self,
-			navigationHelperBuilder: NavigationHelperBuilderProtocol,
+			navigationHelperBuilder: navigationHelperBuilder,
 			presentingViewController: presentingViewController)
 	}
 	
