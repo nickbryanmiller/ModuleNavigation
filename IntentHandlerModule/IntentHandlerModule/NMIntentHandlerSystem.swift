@@ -14,16 +14,12 @@ public class NMIntentHandlerSystem: NMIntentHandlerSystemProtocol {
 	
 	// MARK: - Lifecycle
 	
-	public init(navigationHelperForViewControllers: @escaping GetNavigationHelperMethod) {
-		self.navigationHelperForViewControllers = navigationHelperForViewControllers
+	public init(navigationHelperBuilder: NavigationHelperBuilderProtocol) {
+		self.navigationHelperBuilder = navigationHelperBuilder
 		registerAllIntentHandlers()
 	}
 	
 	// MARK: - Public
-	
-	public let navigationHelperForViewControllers: GetNavigationHelperMethod
-	public typealias GetNavigationHelperMethod
-		= ((_ oldViewController: UIViewController, _ newViewController: UIViewController) -> NavigationHelperProtocol)
 	
 	public func handle(
 		_ intent: NMIntent,
@@ -37,20 +33,14 @@ public class NMIntentHandlerSystem: NMIntentHandlerSystemProtocol {
 		handler.handle(
 			intent,
 			intentHandler: self,
+			navigationHelperBuilder: NavigationHelperBuilderProtocol,
 			presentingViewController: presentingViewController)
-	}
-	
-	public func navigate(
-		from oldViewController: UIViewController,
-		to newViewController: UIViewController)
-	{
-		let navigationHelper = navigationHelperForViewControllers(oldViewController, newViewController)
-		navigationHelper.navigate()
 	}
 	
 	// MARK: - Private
 	
 	private var intentHandlers = [NMIntentHandler]()
+	private let navigationHelperBuilder: NavigationHelperBuilderProtocol
 	
 	private func registerAllIntentHandlers() {
 		register(NMIntentHandlerGoToAnimalPage())

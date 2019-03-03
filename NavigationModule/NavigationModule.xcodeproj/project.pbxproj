@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27484610222B8C0D00DFE620 /* NavigationHelperBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2748460F222B8C0D00DFE620 /* NavigationHelperBuilderProtocol.swift */; };
 		275977892228FB9500245341 /* NavigationModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 275977872228FB9500245341 /* NavigationModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		275977902228FBB200245341 /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2759778F2228FBB200245341 /* NavigationHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2748460F222B8C0D00DFE620 /* NavigationHelperBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelperBuilderProtocol.swift; sourceTree = "<group>"; };
 		275977842228FB9500245341 /* NavigationModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NavigationModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		275977872228FB9500245341 /* NavigationModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationModule.h; sourceTree = "<group>"; };
 		275977882228FB9500245341 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 				275977872228FB9500245341 /* NavigationModule.h */,
 				275977882228FB9500245341 /* Info.plist */,
 				2759778F2228FBB200245341 /* NavigationHelper.swift */,
+				2748460F222B8C0D00DFE620 /* NavigationHelperBuilderProtocol.swift */,
 			);
 			path = NavigationModule;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				275977902228FBB200245341 /* NavigationHelper.swift in Sources */,
+				27484610222B8C0D00DFE620 /* NavigationHelperBuilderProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

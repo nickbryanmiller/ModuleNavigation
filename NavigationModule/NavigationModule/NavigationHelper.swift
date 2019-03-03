@@ -22,7 +22,7 @@ final public class NavigationHelper: NavigationHelperProtocol {
 	
 	private var navigationType: NavigationType
 	private weak var navigationController: UINavigationController? = nil
-	private weak var newViewController: UIViewController? = nil
+	private weak var destinationViewController: UIViewController? = nil
 	private weak var tabBarController: UITabBarController? = nil
 	private var desiredIndex: Int? = nil
 	
@@ -32,7 +32,7 @@ final public class NavigationHelper: NavigationHelperProtocol {
 	{
 		self.navigationType = .push
 		self.navigationController = navigationController
-		self.newViewController = newViewController
+		self.destinationViewController = newViewController
 	}
 	
 	public init(
@@ -55,7 +55,7 @@ final public class NavigationHelper: NavigationHelperProtocol {
 	private func navigateByPush() {
 		guard
 			let navigationController = navigationController,
-			let newViewController = newViewController
+			let newViewController = destinationViewController
 			else { return }
 		navigationController.pushViewController(newViewController, animated: true)
 	}
