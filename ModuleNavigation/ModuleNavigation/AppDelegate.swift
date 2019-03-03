@@ -16,17 +16,6 @@ import NavigationModule
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
-	
-	enum TabType: Int {
-		case explore = 0
-		case profile
-		
-		init?(from viewController: UIViewController) {
-			if viewController is ExploreViewController { self = .explore }
-			else if viewController is ProfileViewController { self = .profile }
-			else { return nil }
-		}
-	}
 
 	func application(
 		_ application: UIApplication,
@@ -35,25 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		
 		let window = UIWindow(frame: UIScreen.main.bounds)
 		let tabBarController = UITabBarController(nibName: nil, bundle: nil)
-		
-		let intentHandler = NMIntentHandlerSystem(
-			navigationHelperForViewControllers: { (oldVC, newVC) -> NavigationHelperProtocol in
-				// check tab switch
-				if
-					let desiredTab = TabType(from: newVC),
-					desiredTab.rawValue != tabBarController.selectedIndex
-				{
-					return NavigationHelper(
-						tabBarController: tabBarController,
-						desiredIndex: desiredTab.rawValue)
-				}
-				
-				// return push
-				guard let navVC = oldVC.navigationController else { fatalError() }
-				return NavigationHelper(navigationController: navVC, newViewController: newVC)
-				
-			})
-		
+		let navigationHelperBuilder = NavigationHelperBuilder(tabBarController: tabBarController)
+		let intentHandler = NMIntentHandlerSystem(navigationHelperBuilder: navigationHelperBuilder)
+
 		let rootVC1 = ExploreViewController(intentHandler: intentHandler)
 		rootVC1.tabBarItem = UITabBarItem(
 			title: rootVC1.title,

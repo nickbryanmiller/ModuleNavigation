@@ -9,6 +9,7 @@
 import Foundation
 import IntentModule
 import ProfileModule
+import NavigationModule
 
 internal class NMIntentHandlerGoToProfilePage: NMIntentHandler {
 	
@@ -18,13 +19,17 @@ internal class NMIntentHandlerGoToProfilePage: NMIntentHandler {
 	
 	func handle(
 		_ intent: NMIntent,
-		intentHandler: NMIntentHandlerSystem,
+		intentHandler: NMIntentHandlerSystemProtocol,
+		navigationHelperBuilder: NavigationHelperBuilderProtocol,
 		presentingViewController: UIViewController)
 	{
 		guard intent is NMIntentGoToProfilePage else { return }
 		
 		let vc = ProfileViewController(intentHandler: intentHandler)
-		intentHandler.navigate(from: presentingViewController, to: vc)
+		let navigationHelper = navigationHelperBuilder.build(
+			presentingViewController: presentingViewController,
+			destinationViewController: vc)
+		navigationHelper.navigate()
 	}
 	
 }

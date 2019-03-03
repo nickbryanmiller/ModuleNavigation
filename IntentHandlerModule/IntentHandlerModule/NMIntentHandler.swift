@@ -8,11 +8,13 @@
 
 import Foundation
 import IntentModule
+import NavigationModule
 
 protocol NMIntentHandler {
 	func canHandle(_ intent: NMIntent) -> Bool
 	func handle(
 		_ intent: NMIntent,
-		intentHandler: NMIntentHandlerSystem,
+		intentHandler: NMIntentHandlerSystemProtocol,
+		navigationHelperBuilder: NavigationHelperBuilderProtocol,
 		presentingViewController: UIViewController)
 }

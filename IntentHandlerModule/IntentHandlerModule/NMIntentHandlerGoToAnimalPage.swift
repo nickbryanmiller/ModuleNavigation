@@ -9,6 +9,7 @@
 import Foundation
 import IntentModule
 import AnimalModule
+import NavigationModule
 
 internal class NMIntentHandlerGoToAnimalPage: NMIntentHandler {
 	
@@ -18,13 +19,18 @@ internal class NMIntentHandlerGoToAnimalPage: NMIntentHandler {
 	
 	func handle(
 		_ intent: NMIntent,
-		intentHandler: NMIntentHandlerSystem,
+		intentHandler: NMIntentHandlerSystemProtocol,
+		navigationHelperBuilder: NavigationHelperBuilderProtocol,
 		presentingViewController: UIViewController)
 	{
 		guard intent is NMIntentGoToAnimalPage else { return }
 		
 		let animalVC = AnimalViewController(intentHandler: intentHandler)
-		intentHandler.navigate(from: presentingViewController, to: animalVC)
+		
+		let navigationHelper = navigationHelperBuilder.build(
+			presentingViewController: presentingViewController,
+			destinationViewController: animalVC)
+		navigationHelper.navigate()
 	}
 	
 }
