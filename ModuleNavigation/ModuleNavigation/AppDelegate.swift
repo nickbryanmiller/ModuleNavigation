@@ -10,11 +10,23 @@ import UIKit
 import IntentHandlerModule
 import ExploreModule
 import ProfileModule
+import NavigationModule
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
+	
+	enum TabType: Int {
+		case explore = 0
+		case profile
+		
+		init?(from viewController: UIViewController) {
+			if viewController is ExploreViewController { self = .explore }
+			else if viewController is ProfileViewController { self = .profile }
+			else { return nil }
+		}
+	}
 
 	func application(
 		_ application: UIApplication,
@@ -22,20 +34,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	{
 		
 		let window = UIWindow(frame: UIScreen.main.bounds)
+		let tabBarController = UITabBarController(nibName: nil, bundle: nil)
 		
-		let intentHandler = NMIntentHandlerSystem()
+		let intentHandler = NMIntentHandlerSystem(
+			navigationHelperForViewControllers: { (oldVC, newVC) -> NavigationHelperProtocol in
+				// check tab switch
+				if
+					let desiredTab = TabType(from: newVC),
+					desiredTab.rawValue != tabBarController.selectedIndex
+				{
+					return NavigationHelper(
+						tabBarController: tabBarController,
+						desiredIndex: desiredTab.rawValue)
+				}
+				
+				// return push
+				guard let navVC = oldVC.navigationController else { fatalError() }
+				return NavigationHelper(navigationController: navVC, newViewController: newVC)
+				
+			})
 		
 		let rootVC1 = ExploreViewController(intentHandler: intentHandler)
-		rootVC1.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+		rootVC1.tabBarItem = UITabBarItem(
+			title: rootVC1.title,
+			image: nil,
+			tag: TabType.explore.rawValue)
 		
 		let rootVC2 = ProfileViewController(intentHandler: intentHandler)
-		rootVC2.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 1)
+		rootVC2.tabBarItem = UITabBarItem(
+			title: rootVC2.title,
+			image: nil,
+			tag: TabType.profile.rawValue)
 		
-		let tabController = UITabBarController(nibName: nil, bundle: nil)
 		let controllers = [rootVC1, rootVC2]
-		tabController.viewControllers = controllers.map { UINavigationController(rootViewController: $0) }
+		tabBarController.viewControllers = controllers.map { UINavigationController(rootViewController: $0) }
 		
-		window.rootViewController = tabController
+		window.rootViewController = tabBarController
 		window.makeKeyAndVisible()
 		self.window = window
 		

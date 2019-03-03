@@ -8,18 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		2700EA6F221FE283006C4ED4 /* NMIntentHandlerGoToAnimalPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2700EA6E221FE283006C4ED4 /* NMIntentHandlerGoToAnimalPage.swift */; };
+		27085B2F222917C300E3BE34 /* NMIntentHandlerGoToProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27085B2E222917C300E3BE34 /* NMIntentHandlerGoToProfilePage.swift */; };
 		2731F076221FD5FB00E15AA3 /* IntentHandlerModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 2731F074221FD5FB00E15AA3 /* IntentHandlerModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2731F080221FD6C100E15AA3 /* NMIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2731F07F221FD6C100E15AA3 /* NMIntentHandler.swift */; };
 		2731F082221FD70A00E15AA3 /* NMIntentHandlerSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2731F081221FD70A00E15AA3 /* NMIntentHandlerSystem.swift */; };
+		274845ED222B72D500DFE620 /* AnimalModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274845EC222B72D500DFE620 /* AnimalModule.framework */; };
+		274845EF222B72D500DFE620 /* ExploreModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274845EE222B72D500DFE620 /* ExploreModule.framework */; };
+		274845F1222B72D500DFE620 /* IntentModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274845F0222B72D500DFE620 /* IntentModule.framework */; };
+		274845F3222B72D500DFE620 /* NavigationModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274845F2222B72D500DFE620 /* NavigationModule.framework */; };
+		274845F5222B72D500DFE620 /* ProfileModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274845F4222B72D500DFE620 /* ProfileModule.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2700EA6E221FE283006C4ED4 /* NMIntentHandlerGoToAnimalPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMIntentHandlerGoToAnimalPage.swift; sourceTree = "<group>"; };
+		27085B2E222917C300E3BE34 /* NMIntentHandlerGoToProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMIntentHandlerGoToProfilePage.swift; sourceTree = "<group>"; };
 		2731F071221FD5FB00E15AA3 /* IntentHandlerModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IntentHandlerModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2731F074221FD5FB00E15AA3 /* IntentHandlerModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentHandlerModule.h; sourceTree = "<group>"; };
 		2731F075221FD5FB00E15AA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2731F07F221FD6C100E15AA3 /* NMIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMIntentHandler.swift; sourceTree = "<group>"; };
 		2731F081221FD70A00E15AA3 /* NMIntentHandlerSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMIntentHandlerSystem.swift; sourceTree = "<group>"; };
+		274845EC222B72D500DFE620 /* AnimalModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AnimalModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		274845EE222B72D500DFE620 /* ExploreModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ExploreModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		274845F0222B72D500DFE620 /* IntentModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IntentModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		274845F2222B72D500DFE620 /* NavigationModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NavigationModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		274845F4222B72D500DFE620 /* ProfileModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ProfileModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +39,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274845ED222B72D500DFE620 /* AnimalModule.framework in Frameworks */,
+				274845EF222B72D500DFE620 /* ExploreModule.framework in Frameworks */,
+				274845F1222B72D500DFE620 /* IntentModule.framework in Frameworks */,
+				274845F3222B72D500DFE620 /* NavigationModule.framework in Frameworks */,
+				274845F5222B72D500DFE620 /* ProfileModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +55,7 @@
 			children = (
 				2731F073221FD5FB00E15AA3 /* IntentHandlerModule */,
 				2731F072221FD5FB00E15AA3 /* Products */,
+				274845EB222B72D500DFE620 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,8 +75,21 @@
 				2731F07F221FD6C100E15AA3 /* NMIntentHandler.swift */,
 				2731F081221FD70A00E15AA3 /* NMIntentHandlerSystem.swift */,
 				2700EA6E221FE283006C4ED4 /* NMIntentHandlerGoToAnimalPage.swift */,
+				27085B2E222917C300E3BE34 /* NMIntentHandlerGoToProfilePage.swift */,
 			);
 			path = IntentHandlerModule;
+			sourceTree = "<group>";
+		};
+		274845EB222B72D500DFE620 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				274845EC222B72D500DFE620 /* AnimalModule.framework */,
+				274845EE222B72D500DFE620 /* ExploreModule.framework */,
+				274845F0222B72D500DFE620 /* IntentModule.framework */,
+				274845F2222B72D500DFE620 /* NavigationModule.framework */,
+				274845F4222B72D500DFE620 /* ProfileModule.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2731F082221FD70A00E15AA3 /* NMIntentHandlerSystem.swift in Sources */,
+				27085B2F222917C300E3BE34 /* NMIntentHandlerGoToProfilePage.swift in Sources */,
 				2731F080221FD6C100E15AA3 /* NMIntentHandler.swift in Sources */,
 				2700EA6F221FE283006C4ED4 /* NMIntentHandlerGoToAnimalPage.swift in Sources */,
 			);

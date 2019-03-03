@@ -7,132 +7,120 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2700EA61221FDFE1006C4ED4 /* AnimalModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 2700EA5F221FDFE1006C4ED4 /* AnimalModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2700EA6B221FE037006C4ED4 /* AnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2700EA6A221FE037006C4ED4 /* AnimalViewController.swift */; };
-		274845F8222B72E600DFE620 /* IntentModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274845F7222B72E600DFE620 /* IntentModule.framework */; };
+		275977892228FB9500245341 /* NavigationModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 275977872228FB9500245341 /* NavigationModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		275977902228FBB200245341 /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2759778F2228FBB200245341 /* NavigationHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2700EA5C221FDFE1006C4ED4 /* AnimalModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnimalModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2700EA5F221FDFE1006C4ED4 /* AnimalModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimalModule.h; sourceTree = "<group>"; };
-		2700EA60221FDFE1006C4ED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2700EA6A221FE037006C4ED4 /* AnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewController.swift; sourceTree = "<group>"; };
-		274845F7222B72E600DFE620 /* IntentModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IntentModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		275977842228FB9500245341 /* NavigationModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NavigationModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		275977872228FB9500245341 /* NavigationModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationModule.h; sourceTree = "<group>"; };
+		275977882228FB9500245341 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2759778F2228FBB200245341 /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2700EA59221FDFE1006C4ED4 /* Frameworks */ = {
+		275977812228FB9500245341 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				274845F8222B72E600DFE620 /* IntentModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2700EA52221FDFE1006C4ED4 = {
+		2759777A2228FB9500245341 = {
 			isa = PBXGroup;
 			children = (
-				2700EA5E221FDFE1006C4ED4 /* AnimalModule */,
-				2700EA5D221FDFE1006C4ED4 /* Products */,
-				274845F6222B72E600DFE620 /* Frameworks */,
+				275977862228FB9500245341 /* NavigationModule */,
+				275977852228FB9500245341 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2700EA5D221FDFE1006C4ED4 /* Products */ = {
+		275977852228FB9500245341 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2700EA5C221FDFE1006C4ED4 /* AnimalModule.framework */,
+				275977842228FB9500245341 /* NavigationModule.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2700EA5E221FDFE1006C4ED4 /* AnimalModule */ = {
+		275977862228FB9500245341 /* NavigationModule */ = {
 			isa = PBXGroup;
 			children = (
-				2700EA5F221FDFE1006C4ED4 /* AnimalModule.h */,
-				2700EA60221FDFE1006C4ED4 /* Info.plist */,
-				2700EA6A221FE037006C4ED4 /* AnimalViewController.swift */,
+				275977872228FB9500245341 /* NavigationModule.h */,
+				275977882228FB9500245341 /* Info.plist */,
+				2759778F2228FBB200245341 /* NavigationHelper.swift */,
 			);
-			path = AnimalModule;
-			sourceTree = "<group>";
-		};
-		274845F6222B72E600DFE620 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				274845F7222B72E600DFE620 /* IntentModule.framework */,
-			);
-			name = Frameworks;
+			path = NavigationModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2700EA57221FDFE1006C4ED4 /* Headers */ = {
+		2759777F2228FB9500245341 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2700EA61221FDFE1006C4ED4 /* AnimalModule.h in Headers */,
+				275977892228FB9500245341 /* NavigationModule.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2700EA5B221FDFE1006C4ED4 /* AnimalModule */ = {
+		275977832228FB9500245341 /* NavigationModule */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2700EA64221FDFE1006C4ED4 /* Build configuration list for PBXNativeTarget "AnimalModule" */;
+			buildConfigurationList = 2759778C2228FB9500245341 /* Build configuration list for PBXNativeTarget "NavigationModule" */;
 			buildPhases = (
-				2700EA57221FDFE1006C4ED4 /* Headers */,
-				2700EA58221FDFE1006C4ED4 /* Sources */,
-				2700EA59221FDFE1006C4ED4 /* Frameworks */,
-				2700EA5A221FDFE1006C4ED4 /* Resources */,
+				2759777F2228FB9500245341 /* Headers */,
+				275977802228FB9500245341 /* Sources */,
+				275977812228FB9500245341 /* Frameworks */,
+				275977822228FB9500245341 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = AnimalModule;
-			productName = AnimalModule;
-			productReference = 2700EA5C221FDFE1006C4ED4 /* AnimalModule.framework */;
+			name = NavigationModule;
+			productName = NavigationModule;
+			productReference = 275977842228FB9500245341 /* NavigationModule.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2700EA53221FDFE1006C4ED4 /* Project object */ = {
+		2759777B2228FB9500245341 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = nickbryanmiller;
 				TargetAttributes = {
-					2700EA5B221FDFE1006C4ED4 = {
+					275977832228FB9500245341 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
 					};
 				};
 			};
-			buildConfigurationList = 2700EA56221FDFE1006C4ED4 /* Build configuration list for PBXProject "AnimalModule" */;
+			buildConfigurationList = 2759777E2228FB9500245341 /* Build configuration list for PBXProject "NavigationModule" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 2700EA52221FDFE1006C4ED4;
-			productRefGroup = 2700EA5D221FDFE1006C4ED4 /* Products */;
+			mainGroup = 2759777A2228FB9500245341;
+			productRefGroup = 275977852228FB9500245341 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2700EA5B221FDFE1006C4ED4 /* AnimalModule */,
+				275977832228FB9500245341 /* NavigationModule */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2700EA5A221FDFE1006C4ED4 /* Resources */ = {
+		275977822228FB9500245341 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -142,18 +130,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2700EA58221FDFE1006C4ED4 /* Sources */ = {
+		275977802228FB9500245341 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2700EA6B221FE037006C4ED4 /* AnimalViewController.swift in Sources */,
+				275977902228FBB200245341 /* NavigationHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		2700EA62221FDFE1006C4ED4 /* Debug */ = {
+		2759778A2228FB9500245341 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -217,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		2700EA63221FDFE1006C4ED4 /* Release */ = {
+		2759778B2228FB9500245341 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -275,7 +263,7 @@
 			};
 			name = Release;
 		};
-		2700EA65221FDFE1006C4ED4 /* Debug */ = {
+		2759778D2228FB9500245341 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -286,14 +274,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = AnimalModule/Info.plist;
+				INFOPLIST_FILE = NavigationModule/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = nickbryanmiller.AnimalModule;
+				PRODUCT_BUNDLE_IDENTIFIER = nickbryanmiller.NavigationModule;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -302,7 +290,7 @@
 			};
 			name = Debug;
 		};
-		2700EA66221FDFE1006C4ED4 /* Release */ = {
+		2759778E2228FB9500245341 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -313,14 +301,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = AnimalModule/Info.plist;
+				INFOPLIST_FILE = NavigationModule/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = nickbryanmiller.AnimalModule;
+				PRODUCT_BUNDLE_IDENTIFIER = nickbryanmiller.NavigationModule;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -331,25 +319,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2700EA56221FDFE1006C4ED4 /* Build configuration list for PBXProject "AnimalModule" */ = {
+		2759777E2228FB9500245341 /* Build configuration list for PBXProject "NavigationModule" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2700EA62221FDFE1006C4ED4 /* Debug */,
-				2700EA63221FDFE1006C4ED4 /* Release */,
+				2759778A2228FB9500245341 /* Debug */,
+				2759778B2228FB9500245341 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2700EA64221FDFE1006C4ED4 /* Build configuration list for PBXNativeTarget "AnimalModule" */ = {
+		2759778C2228FB9500245341 /* Build configuration list for PBXNativeTarget "NavigationModule" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2700EA65221FDFE1006C4ED4 /* Debug */,
-				2700EA66221FDFE1006C4ED4 /* Release */,
+				2759778D2228FB9500245341 /* Debug */,
+				2759778E2228FB9500245341 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2700EA53221FDFE1006C4ED4 /* Project object */;
+	rootObject = 2759777B2228FB9500245341 /* Project object */;
 }

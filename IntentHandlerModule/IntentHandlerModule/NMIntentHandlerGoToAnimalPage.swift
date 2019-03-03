@@ -8,7 +8,7 @@
 
 import Foundation
 import IntentModule
-import AnimalModule // I can do this because this class sits above and can depend on whatever
+import AnimalModule
 
 internal class NMIntentHandlerGoToAnimalPage: NMIntentHandler {
 	
@@ -18,14 +18,13 @@ internal class NMIntentHandlerGoToAnimalPage: NMIntentHandler {
 	
 	func handle(
 		_ intent: NMIntent,
-		intentHandler: NMIntentHandlerSystemProtocol,
-		presentingViewController: UIViewController?)
+		intentHandler: NMIntentHandlerSystem,
+		presentingViewController: UIViewController)
 	{
 		guard intent is NMIntentGoToAnimalPage else { return }
 		
 		let animalVC = AnimalViewController(intentHandler: intentHandler)
-		// do any other additional set up with the objects in the intent and the new vc
-		presentingViewController?.navigationController?.pushViewController(animalVC, animated: true)
+		intentHandler.navigate(from: presentingViewController, to: animalVC)
 	}
 	
 }

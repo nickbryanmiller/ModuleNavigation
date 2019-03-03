@@ -19,4 +19,7 @@
    <FileRef
       location = "group:AnimalModule/AnimalModule.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:NavigationModule/NavigationModule.xcodeproj">
+   </FileRef>
 </Workspace>

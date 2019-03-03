@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		272F320A221FCCE5000E1B17 /* ExploreModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 272F3208221FCCE5000E1B17 /* ExploreModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		272F321D221FCD72000E1B17 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F321C221FCD72000E1B17 /* ExploreViewController.swift */; };
+		274845FB222B72F000DFE620 /* IntentModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274845FA222B72F000DFE620 /* IntentModule.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		272F3208221FCCE5000E1B17 /* ExploreModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExploreModule.h; sourceTree = "<group>"; };
 		272F3209221FCCE5000E1B17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		272F321C221FCD72000E1B17 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		274845FA222B72F000DFE620 /* IntentModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IntentModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,6 +25,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274845FB222B72F000DFE620 /* IntentModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +37,7 @@
 			children = (
 				272F3207221FCCE5000E1B17 /* ExploreModule */,
 				272F3206221FCCE5000E1B17 /* Products */,
+				274845F9222B72F000DFE620 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +57,14 @@
 				272F3209221FCCE5000E1B17 /* Info.plist */,
 			);
 			path = ExploreModule;
+			sourceTree = "<group>";
+		};
+		274845F9222B72F000DFE620 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				274845FA222B72F000DFE620 /* IntentModule.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
