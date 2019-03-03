@@ -13,7 +13,7 @@ Basic iOS navigation using an IntentHandler system.
 - [x] Works with multiple apps sharing dependencies (each has their own IntentHandlerSystem but IntentHandlerBasics is another module with the base protocol).
 - [x] Can be used in conjunction with (but does not rely on) Navigators, Dependency Injection, Coordinators, FactoryMethods
 - [x] No duplicate code
-- [x] Compile time errors (no uncertain functionality and no dynamic crashes)
+- [x] Dynamic
 - [x] Fast if large by using “namespacing” (breaking into appropriate sub modules or searching by module extention to NMIntent)
 - [x] Allows for logic to be performed before move (such as converting from one model type to another)
 - [x] Allows for "middleware" - additional logic in the canHandle function as well as redirecting the user before anything is called at all
